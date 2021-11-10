@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+service ImageSearch {
+    rpc TextToImageSearch(Query) returns (Results);
+}
+
+message Query {
+    string text = 1;
+    int32 num_results = 2;
+}
+
+message Results {
+    repeated string urls = 1;
+    repeated float scores = 2;
+}
