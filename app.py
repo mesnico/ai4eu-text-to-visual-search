@@ -19,13 +19,13 @@ def parse_argv():
     main_parser.add_argument(
         'index_dir',
         nargs='?',
-        default='faiss_mirf100k',
+        default='faiss_index',
         help='source directory of the FAISS index storing the image features and urls'
     )
     main_parser.add_argument(
         'tern_model',
         nargs='?',
-        default='tern_checkpoints/model_tern_teran_uncertainty_best_ndcgspice.pth.tar',
+        default='tern_data/model_tern_teran_uncertainty_best_ndcgspice.pth.tar',
         help='TERN model checkpoint'
     )
     main_parser.add_argument(

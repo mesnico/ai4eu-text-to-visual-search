@@ -61,8 +61,8 @@ class ImageRetrieval:
 
 
 if __name__ == '__main__':
-    faiss_index_path = 'faiss_mirf100k/'
-    tern_checkpoint = "tern_checkpoints/model_tern_teran_uncertainty_best_ndcgspice.pth.tar"
+    faiss_index_path = 'faiss_index/'
+    tern_checkpoint = "tern_data/model_tern_teran_uncertainty_best_ndcgspice.pth.tar"
     ir = ImageRetrieval(faiss_index_path, tern_checkpoint)
 
     while(1):
