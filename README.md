@@ -41,13 +41,12 @@ python bu_features_convert.py --in_file OUT_PATH/bu_features.tsv.0 --output_dir 
 
 ## Image Indexing
 The next step is to extract and index the TERN cross-modal features. 
-First, you must download and unzip the TERN model files into the project root:
+First, you must download the tar containing the TERN pre-trained models ([download link](https://drive.google.com/file/d/1So80gAlz6iCQXHMlH_nCPrBQio5Ez5-y/view?usp=sharing)) into the project root. Then, untar it:
 ```
-wget http://datino.isti.cnr.it/tern/ai4eu_tern_data.tar
 tar -xvf ai4eu_tern_data.tar
 ```
 
-Then, you can run the extraction and indexing code (`OUT_PATH` is the directory where the folder `bu_features` resides)
+At this point, you can run the extraction and indexing code (`OUT_PATH` is the directory where the folder `bu_features` resides)
 ```
 python index_bu_features.py --features_dir OUT_PATH/
 ```
